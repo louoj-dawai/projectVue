@@ -1,0 +1,28 @@
+    <div id="app">
+        <h2>案例演示</h2>
+        <p>{{message}}</p>
+        <p>{{user.uname}}</p>
+    </div>
+<script src="js/vue.global.js"></script>
+<!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+<script>
+    const HelloVue = {
+        data() {
+            return {
+                message: "我的第一个vue应用",
+                user: {
+                    uname: "lisi",
+                    upass: "1234",
+                    age: 18
+                }
+            }
+        }
+    }
+    Vue.createApp(HelloVue).mount("#app")
+   
+</script>
+<style>
+    p{
+        color: brown;
+    }
+</style>
